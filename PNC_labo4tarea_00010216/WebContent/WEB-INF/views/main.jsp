@@ -13,10 +13,22 @@
 	<!--<h1>${message}</h1>-->
 	<h2>Product information</h2>
 	<form:form action = "${pageContext.request.contextPath}/formData" method="POST" modelAttribute ="product">
-		<label>Name: </label><form:input type = "text" name = "name" path = "name"/><br>
-		<label>Brand: </label><form:input type = "text" name = "brand" path = "brand"/><br>
-		<label>Description: </label><form:input type = "text" name = "description" path = "description"/><br>
-		<label>Category: </label><form:input type = "text" name = "category" path = "category"/><br>
+		
+		<label>Name: </label><form:input type = "text" name = "name" path = "name"/>
+		<form:errors path = "name" cssStyle = "color:#E81505"></form:errors><br>
+		
+		<label>Brand: </label><form:input type = "text" name = "brand" path = "brand"/>
+		<form:errors path = "brand" cssStyle = "color:#E81505"></form:errors><br>
+		
+		<label>Description: </label><form:input type = "text" name = "description" path = "description"/>
+		<form:errors path = "description" cssStyle = "color:#E81505"></form:errors><br>
+		
+		<label>Category: </label><form:input type = "text" name = "category" path = "category"/>
+		<form:errors path = "category" cssStyle = "color:#E81505"></form:errors><br>
+		
+		<label>Price: </label><form:input type = "number" step = ".01" name = "price" path = "price"/>
+		<form:errors path = "price" cssStyle = "color:#E81505"></form:errors><br>
+		
 		<input type = "submit" value = "Insert product"/>
 	</form:form>
 	</body>
