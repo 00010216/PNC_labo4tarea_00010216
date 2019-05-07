@@ -29,6 +29,9 @@
 		<label>Price: </label><form:input type = "number" step = ".01" name = "price" path = "price"/>
 		<form:errors path = "price" cssStyle = "color:#E81505"></form:errors><br>
 		
+		<label>Expiration: </label><form:input type = "text" name = "price" path = "exp_date"/>
+		<form:errors path = "exp_date" cssStyle = "color:#E81505"></form:errors><br>
+		
 		<input type = "submit" value = "Insert product"/>
 	</form:form>
 	</body>

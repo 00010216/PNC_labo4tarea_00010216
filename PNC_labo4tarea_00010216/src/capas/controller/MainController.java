@@ -35,7 +35,7 @@ public class MainController {
 			mav.setViewName("main"); // regresa a pagina principal y muestra errores
 		}else {
 		mav.setViewName("result");
-		mav.addObject("message", "Produc was inserted successfully");
+		mav.addObject("message", "Product was inserted successfully");
 		}
 		return mav;
 	}
